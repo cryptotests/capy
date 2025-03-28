@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$CAPY - The Chillest Memecoin</title>
+    <style>
+        :root {
+            --capy-green: #4CAF50;
+            --capy-orange: #FF6B6B;
+            --capy-bg: #e0f7e9;
+        }
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: var(--capy-bg);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        h1 {
+            color: var(--capy-green);
+            font-size: 3.5rem;
+            margin: 10px 0;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--capy-orange);
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--capy-orange);
+            border-bottom: 2px dashed var(--capy-green);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .meme-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .meme-img {
+            width: 250px;
+            border-radius: 15px;
+            border: 3px solid var(--capy-green);
+            transition: transform 0.3s;
+        }
+        .meme-img:hover {
+            transform: scale(1.05);
+        }
+        .tokenomics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .token-card {
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .roadmap {
+            position: relative;
+            padding-left: 30px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--capy-green);
+        }
+        .roadmap-item {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        .roadmap-item::before {
+            content: '🐾';
+            position: absolute;
+            left: -35px;
+            font-size: 1.5rem;
+        }
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .team-member {
+            text-align: center;
+            width: 150px;
+        }
+        .team-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--capy-green);
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+            margin-top: 50px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>$CAPY</h1>
+            <p class="tagline">"Relax, hodl, and vibe like a capybara"</p>
+            <div class="meme-grid">
+                <img src="https://i.imgur.com/JzYqR7a.png" alt="Capy chillin" class="meme-img">
+                <img src="https://i.imgur.com/p3ZfW9k.png" alt="Capy moon" class="meme-img">
+                <img src="https://i.imgur.com/qXQYtZL.png" alt="Capy gang" class="meme-img">
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>🚀 Our Vision</h2>
+            <p>We're creating the <strong>most relaxed cryptocurrency</strong> in existence. No utility, no promises - just good vibes and memes that outlive your average relationship.</p>
+            <p>In a world of rug pulls and scams, $CAPY stands for <strong>transparent laziness</strong>. We're not even trying to pretend this is serious.</p>
+        </div>
+
+        <div class="section">
+            <h2>💰 Tokenomics (Jokenomics)</h2>
+            <div class="tokenomics-grid">
+                <div class="token-card">
+                    <h3>Supply</h3>
+                    <p>777,777,777,777 $CAPY</p>
+                    <p><em>"Nice round number"</em></p>
+                </div>
+                <div class="token-card">
+                    <h3>Taxes</h3>
+                    <p>0% Buy / 0% Sell</p>
+                    <p><em>"We're not the IRS"</em></p>
+                </div>
+                <div class="token-card">
+                    <h3>Liquidity</h3>
+                    <p>Locked for 777 days</p>
+                    <p><em>"Nice"</em></p>
+                </div>
+                <div class="token-card">
+                    <h3>Allocation</h3>
+                    <p>75% Fair Launch</p>
+                    <p>25% Team (for memes)</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <p><strong>Contract Address:</strong> 0xcapy...42069</p>
+                <p><em>(Check our Telegram for real address)</em></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📅 Roadmap</h2>
+            <div class="roadmap">
+                <div class="roadmap-item">
+                    <h3>Phase 1: The Beginning (Q2 2025)</h3>
+                    <p>- Launch token with minimal effort</p>
+                    <p>- First 100 holders (probably just our moms)</p>
+                    <p>- Meme contest with $CAPY prizes</p>
+                </div>
+                <div class="roadmap-item">
+                    <h3>Phase 2: The Rise (Q4 2025)</h3>
+                    <p>- "Capy in Sunglasses" NFT collection</p>
+                    <p>- Get listed on a CEX (if we feel like it)</p>
+                    <p>- Community votes on useless features</p>
+                </div>
+                <div class="roadmap-item">
+                    <h3>Phase 3: The Moon (2026)</h3>
+                    <p>- Buy an actual capybara for the team</p>
+                    <p>- Sponsor a capybara sanctuary</p>
+                    <p>- 1 $CAPY = 1 $CAPY</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👥 The Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://i.imgur.com/JzYqR7a.png" alt="CEO" class="team-img">
+                    <h3>CEO</h3>
+                    <p>Some Capybara</p>
+                    <p><em>"Chill expert"</em></p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.imgur.com/p3ZfW9k.png" alt="CTO" class="team-img">
+                    <h3>CTO</h3>
+                    <p>ChatGPT-4</p>
+                    <p><em>"Does all the work"</em></p>
+                </div>
+                <div class="team-member">
+                    <img src="https://i.imgur.com/qXQYtZL.png" alt="CFO" class="team-img">
+                    <h3>CFO</h3>
+                    <p>Your Dog</p>
+                    <p><em>"Good boy"</em></p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px;"><em>Note: We're anonymous because we have real jobs.</em></p>
+        </div>
+
+        <div class="section">
+            <h2>❓ FAQ</h2>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <h3>Q: Is this a scam?</h3>
+                <p>A: Scams require effort. We're too lazy to scam anyone.</p>
+                
+                <h3>Q: When Lambo?</h3>
+                <p>A: When capybaras learn to drive.</p>
+                
+                <h3>Q: What's the utility?</h3>
+                <p>A: The utility is vibing. That's it.</p>
+                
+                <h3>Q: How do I buy?</h3>
+                <p>A: 1. Get SOL. 2. Swap on pump.fun. 3. Hodl. 4. Vibes.</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://discord.gg/AWAwAE7A" target="_blank">
+                <img src="https://discord.gg/AWAwAE7A" alt="Discord" class="social-icon">
+            </a>
+            <a href="https://dexscreener.com/solana/capyaddress" target="_blank">
+                <img src="https://dexscreener.com/favicon.ico" alt="DexScreener" class="social-icon">
+            </a>
+        </div>
+
+        <p class="disclaimer">
+            ⚠️ DISCLAIMER: $CAPY is a meme token with no intrinsic value or expectation of financial return. 
+            This is not investment advice. The team is not responsible for any gains or losses. 
+            Please only invest what you can afford to lose while vibing.
+        </p>
+    </div>
+</body>
+</html>
